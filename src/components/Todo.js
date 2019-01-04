@@ -19,7 +19,6 @@ export class Todo extends Component {
         </p>
         <button className="DeleteBtn" onClick={ this.props.deleteTodo.bind(this, id) }>X</button>
         <input className="CompletedCheckbox" checked={ this.props.todo.completed ? true : false } type="checkbox" onChange={ this.props.todoStateChange.bind(this, id) }></input>
-        <div className="Popup">{ this.props.todo.completed ? "Completed" : "Not completed" }</div>
       </div>
     )
   }

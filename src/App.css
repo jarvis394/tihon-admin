@@ -1,9 +1,5 @@
 .App {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
 
 .TodosList {
@@ -29,6 +25,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .CreateTodo {
@@ -56,31 +53,13 @@
   transform: translateY(0px);
 }
 
+.CreateTodoBox input {
+  
+}
+
 .CompletedCheckbox {
   float: right;
   margin-top: -18px;
-}
-
-.CompletedCheckbox:hover + .Popup {
-  transform: translateY(-5px);
-  opacity: 1;
-}
-
-.Popup {
-  -webkit-transition: ease 0.1s;
-  transition: ease 0.1s;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-  opacity: 0;
-  float: right;
-  position: relative;
-  left: 24px;
-  background: #242e38;
-  border: solid 1px #1e2833;
-  padding: 5px; 
-  border-radius: 8px;
-  font-size: 14px;
-  cursor: default;
 }
 
 .DeleteBtn {
