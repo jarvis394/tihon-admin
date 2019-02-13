@@ -19,7 +19,10 @@ class App extends Component {
   }
   
   render() {
-    alert(utils.time)
+    utils.getCmdsData().then(resp => {
+      this.hidePreloader()
+      alert(resp)
+    })
     
     return (
       <main>

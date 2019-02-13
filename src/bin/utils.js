@@ -29,14 +29,14 @@ export const getCmdsData = async () => {
   for (let peer in log) {
     for (let time in log[peer]) {
       let t = new Date(time)
-      if (timeNow.date == t.getDate() && timeNow.month == t.getMonth() && timeNow.year == t.getFullYear()) {
+      if (timeNow.date === t.getDate() && timeNow.month === t.getMonth() && timeNow.year === t.getFullYear()) {
         cmdsData[t.getHours()] += 1
       }
     }
   }
 
   for (let i = cmdsData.length - 1; i >= 0; i--) {
-    if (cmdsData[i] == 0) cmdsData.pop()
+    if (cmdsData[i] === 0) cmdsData.pop()
     else break;
   }
 
