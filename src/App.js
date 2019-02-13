@@ -10,9 +10,15 @@ class App extends Component {
   }
   
   render() {
+    setTimeout(() => this.setState({
+      preloader: {
+        enabled: false
+      }
+    }), 1000)
+    
     return (
       <main>
-        {this.state.preloader.enabled ? <Preloader /> : ""}
+        <Preloader enabled={this.state.preloader.enabled} />
       </main>
     );
   }
