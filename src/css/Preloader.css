@@ -1,0 +1,37 @@
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.progress {
+  background: #adc7ff !important;
+  border-radius: 10px !important;
+  height: 8px !important;
+  width: 128px !important;
+}
+
+.progress > .indeterminate {
+  background: #3674f9 !important;
+}
+
+.progress > .indeterminate:after {
+  border-radius: 8px !important;
+}
+
+.progress > .indeterminate:before {
+  border-radius: 8px !important;
+}
+
+.preloader-ico {
+  width: 128px !important;
+  margin-bottom: 16px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
