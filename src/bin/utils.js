@@ -6,7 +6,12 @@ export const get = async (path) => {
   const options = {
     url: BASE_URL + path,
     json: true,
-    method: "GET"
+    dataType: 'jsonp',
+    method: "GET",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+    }
   }
   
   let data = await request(options)

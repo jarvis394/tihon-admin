@@ -14,10 +14,10 @@ export class Preloader extends Component {
       <div style={this.props.enabled ? {} : {
           display: "none"
         }} className="preloader animated fadeIn">
-        <img src="icons/icon.png" alt="App icon" class="preloader-ico" />
+        <img src="icons/icon.png" alt="App icon" className="preloader-ico" />
     
-        <div class="progress">
-          <div class="indeterminate"></div>
+        <div className="progress">
+          <div className="indeterminate"></div>
         </div>
       </div>
     )
