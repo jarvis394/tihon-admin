@@ -23,26 +23,11 @@ class App extends Component {
     ]
   }
 
-  todoStateChange = (id) => {
-    this.setState({ 
-      todos: this.state.todos.map(todo => {
-        if (todo.id === id) todo.completed = !todo.completed
-        return todo
-      })
-    });
-  }
-
-  deleteTodo = (id) => {
-    this.setState({ 
-      todos: [...this.state.todos.filter(todo => todo.id !== id)]
-    });
-  }
-
   render() {
     return (
-      <div className="App">
+      <main>
         <Todos todos={ this.state.todos } todoStateChange={ this.todoStateChange } deleteTodo={ this.deleteTodo } />
-      </div>
+      </main>
     );
   }
 }
