@@ -24,21 +24,27 @@ export default class Dashboard extends Component {
 
         <div className="row after-chart">
           <div className="container">
-            <div className="col s12 m6">
-              <Card 
-                titleClasses="red-text" 
-                title={data.amount.errors} 
-                text="Errors happend past 24 hours" />
-              <CardAction 
-                titleClasses="grey-text text-darken-3"
-                title="Logs" 
-                text="Check logs in dialogs" />
+            <div className="section">
+              <div className="col s12 m6">
+                <Card 
+                  titleClasses="red-text" 
+                  title={data.amount.errors} 
+                  text="Errors happend past 24 hours" />
+              </div>
+              <div className="col s12 m6">
+                <Card 
+                  titleClasses="blue-text" 
+                  title={data.amount.commands} 
+                  text="Commands used past 24 hours" />
+              </div>
             </div>
-            <div className="col s12 m6">
-              <Card 
-                titleClasses="blue-text" 
-                title={data.amount.commands} 
-                text="Commands used past 24 hours" />
+            <div className="section">
+              <div className="col s12 m6">
+                <CardAction 
+                  titleClasses="grey-text text-darken-3"
+                  title="Logs" 
+                  text="Check logs in dialogs" />
+              </div>
             </div>
           </div>
         </div>
