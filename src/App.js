@@ -30,7 +30,7 @@ class App extends Component {
   
   render() {    
     alert(JSON.stringify(this.state))
-    alert(this._apiData)
+    this._apiData.then(d => alert(d))
     
     return (
       <main>
