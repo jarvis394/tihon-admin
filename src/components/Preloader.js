@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import '../css/Preloader.css';
+import '../css/animate.css';
 
 export class Preloader extends Component {
-  shownStyle() {
+  classes() {
     let state = this.props.enabled;
     
-    if (state) return "display: block;"
-    else return "display:none;"
+    if (state) return "preloader animated fadeIn"
+    else return "preloader animated fadeOut"
   }
   
   render() {
     return (
-      <div style={this.props.enabled ? {} : {
-          display: "none"
-        }} className="preloader animated fadeIn">
+      <div className={this.classes()}>
         <img src="icons/icon.png" alt="App icon" className="preloader-ico" />
     
         <div className="progress">

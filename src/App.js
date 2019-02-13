@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Preloader from './components/Preloader.js';
 import './css/App.css';
+import './css/animate.css';
 import * as utils from './bin/utils.js'
 
 class App extends Component {
@@ -22,6 +23,8 @@ class App extends Component {
     this._apiData = utils.getCmdsData().then(data => {
       this.setState({ exData: data })
       console.log(data, this.state)
+      
+      this.hidePreloader()
       
       this._apiData = null
     })
