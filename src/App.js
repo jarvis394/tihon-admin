@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Preloader from './components/Preloader.js';
 import './css/App.css';
+import { time } from './bin/utils.js'
 
 class App extends Component {
   state = {
@@ -8,13 +9,17 @@ class App extends Component {
       enabled: true
     }
   }
+
+  hidePreloader() {
+    this.setState({
+      preloader: {
+        enabled: false
+      }
+    })
+  }
   
   render() {
-      setTimeout(() => this.setState({
-        preloader: {
-          enabled: false
-        }
-      }), 5000)
+    alert(time)
     
     return (
       <main>

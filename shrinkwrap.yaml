@@ -3,6 +3,8 @@ dependencies:
   react: 16.8.1
   react-dom: 16.7.0
   react-scripts: 2.1.5
+  request: 2.88.0
+  request-promise-native: 1.0.5
 packages:
   /@babel/code-frame/7.0.0:
     dependencies:
@@ -8396,6 +8398,16 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
+  /request-promise-core/1.1.1:
+    dependencies:
+      lodash: 4.17.11
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      request: ^2.34
+    resolution:
+      integrity: sha1-Pu4AssWqgyOc+wTFcA2jb4HNCLY=
   /request-promise-core/1.1.1/request@2.88.0:
     dependencies:
       lodash: 4.17.11
@@ -8408,6 +8420,18 @@ packages:
       request: ^2.34
     resolution:
       integrity: sha1-Pu4AssWqgyOc+wTFcA2jb4HNCLY=
+  /request-promise-native/1.0.5:
+    dependencies:
+      request-promise-core: 1.1.1
+      stealthy-require: 1.1.1
+      tough-cookie: 3.0.1
+    dev: false
+    engines:
+      node: '>=0.12.0'
+    peerDependencies:
+      request: ^2.34
+    resolution:
+      integrity: sha1-UoF3D2jgyXGeUWP9P6tIIhX0/aU=
   /request-promise-native/1.0.5/request@2.88.0:
     dependencies:
       request: 2.88.0
@@ -10296,3 +10320,5 @@ specifiers:
   react: ^16.8.1
   react-dom: ^16.7.0
   react-scripts: ^2.1.5
+  request: ^2.88.0
+  request-promise-native: ^1.0.5
