@@ -3,8 +3,6 @@ import '../css/Preloader.css';
 
 export class Preloader extends Component {
   render() {
-    alert(this.props.enabled)
-    
     return (
       <div className="preloader animated fadeIn">
         <img src="icons/icon.png" alt="App icon" class="preloader-ico" />

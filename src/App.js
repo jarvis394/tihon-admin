@@ -8,11 +8,11 @@ class App extends Component {
       enabled: true
     }
   }
-
+  
   render() {
     return (
       <main>
-        <Preloader enabled={this.state.preloader.enabled} />
+        {this.state.preloader.enabled ? <Preloader /> : ""}
       </main>
     );
   }
