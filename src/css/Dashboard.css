@@ -13,7 +13,8 @@
 }
 
 .fixed-chart-wrapper {
-  height: 440px;
+  height: 50vh;
+  max-height: 400px;
   padding-bottom: 80px;
   box-sizing: content-box;
 }
@@ -35,6 +36,8 @@
 .fixed-chart-center {
   display: flex;
   justify-content: center;
+  height: 50vh;
+  max-height: 400px
 }
 
 canvas {
@@ -51,4 +54,5 @@ canvas {
   border-top: 1px solid rgba(0,0,0,0.1);
   box-shadow: 0 -10px 20px -10px rgba(0,0,0,0.1);
   padding-top: 24px;
+  margin-top: 24px;
 }
