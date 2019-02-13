@@ -11,7 +11,7 @@ export default class Card extends Component {
           <h1 className={titleClasses}>{title}</h1>
           <p>{text}</p>
         </div>
-        <div class="card-action">
+        <div className="card-action">
           <a href="/dialogs">Go to</a>
         </div>
       </div>
