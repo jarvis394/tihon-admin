@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Preloader from './components/Preloader.js';
 import './css/App.css';
-import { time } from './bin/utils.js'
+import * as utils from './bin/utils.js'
 
 class App extends Component {
   state = {
@@ -19,7 +19,7 @@ class App extends Component {
   }
   
   render() {
-    alert(time)
+    alert(utils.time)
     
     return (
       <main>

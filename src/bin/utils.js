@@ -2,7 +2,7 @@ const request = require('request-promise-native');
 
 const BASE_URL = "https://api-tihon.glitch.me/"
 
-const get = async (path) => {
+export const get = async (path) => {
   const options = {
     url: BASE_URL + path,
     json: true,
@@ -14,7 +14,7 @@ const get = async (path) => {
   return JSON.parse(data);
 }
 
-const getCmdsData = async () => {
+export const getCmdsData = async () => {
   let log = await get("log/cmds");
   let cmdsData = []
   let timeNow = {
@@ -43,7 +43,7 @@ const getCmdsData = async () => {
   return cmdsData
 }
 
-const time = [
+export const time = [
   "0",
   "1", 
   "2", 
@@ -69,11 +69,3 @@ const time = [
   "22", 
   "23"
 ]
-
-module.exports = {
-  get, 
-  time, 
-  getCmdsData
-}
-
-export default time
