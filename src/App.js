@@ -4,13 +4,15 @@ import './css/App.css';
 
 class App extends Component {
   state = {
-    
+    preloader: {
+      enabled: true
+    }
   }
 
   render() {
     return (
       <main>
-        <Preloader />
+        <Preloader enabled={this.state.preloader.enabled} />
       </main>
     );
   }
