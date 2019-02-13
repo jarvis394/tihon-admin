@@ -1,0 +1,54 @@
+@font-face {
+  font-family: GS-Regular;
+  src: url(../fonts/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: GS-Bold;
+  src: url(../fonts/GoogleSans-Bold.ttf);
+}
+
+.dashboard {
+  flex: 1 0 auto;
+}
+
+.fixed-chart-wrapper {
+  height: 440px;
+  padding-bottom: 80px;
+  box-sizing: content-box;
+}
+
+.fixed-chart-wrapper .fixed-chart {
+  height: inherit;
+  left: 10px;
+  right: 10px;
+  position: fixed;
+}
+
+.fixed-chart-header {
+  font-family: GS-Regular;
+  font-size: 3rem;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.fixed-chart-center {
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  max-width: 750px;
+}
+
+.after-chart {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 -10px 20px -10px rgba(0,0,0,0.1);
+  padding-top: 24px;
+}

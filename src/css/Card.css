@@ -1,0 +1,24 @@
+.card {
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+  transition: 0.7s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card:hover {
+  transform: translateY(-2px)
+}
+
+.card h1 {
+  margin: 0.5rem 0 1rem 0;
+  font-family: GS-Bold;
+}
+
+.card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+.z-depth-3 {
+  -webkit-box-shadow: 0 4px 17px 2px rgba(0, 0, 0, 0.1), 0 3px 14px 2px rgba(0, 0, 0, 0.04), 0 5px 5px -3px rgba(0, 0, 0, 0.01) !important;
+  box-shadow: 0 4px 17px 2px rgba(0, 0, 0, 0.1), 0 3px 14px 2px rgba(0, 0, 0, 0.04), 0 5px 5px -3px rgba(0, 0, 0, 0.01) !important;
+}

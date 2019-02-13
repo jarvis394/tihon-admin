@@ -8,14 +8,14 @@
 }
 
 .progress {
-  background: #adc7ff !important;
+  background: rgba(54, 116, 249, 0.3) !important;
   border-radius: 10px !important;
   height: 8px !important;
   width: 128px !important;
 }
 
 .progress > .indeterminate {
-  background: #3674f9 !important;
+  background: rgba(54, 116, 249, 1) !important;
 }
 
 .progress > .indeterminate:after {

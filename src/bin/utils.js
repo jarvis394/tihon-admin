@@ -4,7 +4,7 @@ const BASE_URL = "https://api-tihon.glitch.me/"
 
 export const get = async (path) => {
   const options = {
-    url: BASE_URL + path,
+    url: BASE_URL + "/" + path,
     json: true,
     method: "GET"
   }
@@ -14,7 +14,7 @@ export const get = async (path) => {
   return JSON.parse(data);
 }
 
-export const getCmdsData = async () => {
+export const getCmdsUsage = async () => {
   let log = await get("log/cmds");
   let cmdsData = []
   let timeNow = {
