@@ -10,11 +10,11 @@ class App extends Component {
   }
   
   render() {
-    setTimeout(() => this.setState({
-      preloader: {
-        enabled: false
-      }
-    }), 1000)
+      setTimeout(() => this.setState({
+        preloader: {
+          enabled: false
+        }
+      }), 5000)
     
     return (
       <main>
