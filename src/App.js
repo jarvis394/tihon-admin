@@ -17,12 +17,20 @@ class App extends Component {
       }
     })
   }
-  
-  render() {
-    utils.getCmdsData().then(resp => {
-      this.hidePreloader()
-      alert(resp)
+
+  componentWillMount() {
+    this._apiData = utils.getCmdsData().then(data => {
+      this.setState({ exData: data })
+      alert(data)
+      alert(JSON.stringify(this.state))
+      
+      this._apiData = null
     })
+  }
+  
+  render() {    
+    alert(JSON.stringify(this.state))
+    alert(this._apiData)
     
     return (
       <main>
