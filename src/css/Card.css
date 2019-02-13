@@ -4,9 +4,9 @@
   transition: 0.7s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
-.card:hover {
+/* .card:hover {
   transform: translateY(-2px)
-}
+} */
 
 .card h1 {
   margin: 0.5rem 0 1rem 0;
