@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "panel.",
+  "name": "panel.",
   "icons": [
     {
       "src": "icons/icon.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#ffffff",
+  "theme_color": "#4071D9",
   "background_color": "#ffffff"
 }
