@@ -21,17 +21,13 @@ class App extends Component {
   componentWillMount() {
     this._apiData = utils.getCmdsData().then(data => {
       this.setState({ exData: data })
-      alert(data)
-      alert(JSON.stringify(this.state))
+      console.log(data, this.state)
       
       this._apiData = null
     })
   }
   
   render() {    
-    alert(JSON.stringify(this.state))
-    this._apiData.then(d => alert(d))
-    
     return (
       <main>
         <Preloader enabled={this.state.preloader.enabled} />
