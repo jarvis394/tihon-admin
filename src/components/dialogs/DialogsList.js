@@ -15,6 +15,9 @@ class DialogsList extends Component {
   }
   
   render() {
+    if (this.props.visible === "hidden") return null
+    
+    alert(JSON.stringify(this.props.data))
     return (
       <main className={"animated " + this.visibility()}>
         <Dialog />

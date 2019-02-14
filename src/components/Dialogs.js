@@ -38,17 +38,10 @@ class Dialogs extends Component {
   }
 
   async componentWillMount() {
-    let errAmount = await utils.get("amount/errors")
-    let cmdsAmount = await utils.get("amount/cmds")
-    let cmdsUsage = await utils.getCmdsUsage()
+    let data = await utils.get("dialogs")
+    
     this.setState({
-      data: {
-        amount: {
-          errors: errAmount,
-          commands: cmdsAmount
-        },
-        usage: cmdsUsage
-      }
+      data: data
     })
 
     this.hidePreloader();
