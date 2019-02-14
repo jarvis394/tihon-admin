@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Preloader from './bin/Preloader';
 import Dialog from './dialogs/Dialog';
-
-import '../css/Main.css';
 
 class DialogsList extends Component {
   visibility() {
@@ -19,7 +16,7 @@ class DialogsList extends Component {
   
   render() {
     return (
-      <main style={this.visibility()}>
+      <main className={"animated " + this.visibility()}>
         <Dialog />
       </main>
     );

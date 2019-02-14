@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Preloader from './bin/Preloader';
-import Dashboard from './dashboard/Dashboard';
+import DialogsList from './dialogs/DialogsList';
 import * as utils from '../bin/utils';
 
 import '../css/Main.css';
