@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import '../../../css/Card.css'
 
 export default class Card extends Component {
@@ -12,7 +13,7 @@ export default class Card extends Component {
           <p>{text}</p>
         </div>
         <div className="card-action">
-          <a href="/dialogs">Go to</a>
+          <Link to="/dialogs">Go to</Link>
         </div>
       </div>
     )
