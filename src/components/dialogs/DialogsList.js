@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Dialog from './dialogs/Dialog';
+import Dialog from './Dialog';
 
 class DialogsList extends Component {
   visibility() {
