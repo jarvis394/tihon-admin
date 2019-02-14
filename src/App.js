@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import Preloader from './components/bin/Preloader';
 import Dashboard from './components/dashboard/Dashboard';
+import Card from './components/dashboard/cards/Card'
 import * as utils from './bin/utils';
+
+import { Route, Switch } from 'react-router-dom'
 
 import './css/App.css';
 
@@ -58,6 +61,10 @@ class App extends Component {
   render() {
     return (
       <main>
+        <Switch>
+  <Route exact path='/a' component={Card}/>
+  <Route path='/schedule' component={Card}/>
+</Switch>
         <Preloader visible={this.state.preloader.visible} />
         <Dashboard data={this.state.data} visible={this.state.dashboard.visible} />
       </main>
